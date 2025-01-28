@@ -48,7 +48,7 @@ export default function RootLayout({
               {["Home", "How We Work", "Hire Developers", "Services", "Portfolio", "Contact Us"].map(
                 (item, index) => (
                   <Link
-                    key={item}
+                    key={index}
                     href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
                     className="relative group hover:text-lightblue-300 transition duration-300"
                   >
