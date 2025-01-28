@@ -96,12 +96,20 @@ export default function Home() {
         {/* Slider */}
         <div className="relative z-10">
           <Slider {...settings}>
-            {["Section 1", "Section 2", "Section 3", "Section 4"].map((section, idx) => (
-              <div key={idx} className={`py-16 px-6 animate__animated animate__fadeIn animate__delay-${idx + 1}s`}>
-                <h1 className="text-4xl sm:text-6xl font-extrabold text-center mb-4 tracking-widest">{section}</h1>
+            {[{ title: "Tailored Technical Solutions for Your Business", description: "Looking for skilled personnel for your business? Whether it’s a short-term or long-term need, Letsachive Softwares offers tailored solutions to fulfill your hiring requirements efficiently." },
+            { title: "Our Goals: Exceeding Expectations", description: " We aim to surpass the high standards set by our clients, employees, candidates, and community, ensuring a positive experience for all. Enhance collaboration and streamline business operations with our customizable solutions." },
+            { title: "Our Resources", description: " Over 50+ resources deployed across diverse projects in the last two years" },
+            { title: "Our Partners", description: "             90+ projects completed with cutting-edge technologies and 20+ industries served" }].map((section, idx) => (
+              <div className="flex flex-col items-center justify-center py-16 px-6 text-white animate__animated animate__fadeIn animate__delay-1s text-center">
+                <h1 className="text-4xl sm:text-6xl font-extrabold text-center mb-4 tracking-widest">
+                  {section?.title}
+                </h1>
                 <p className="text-lg sm:text-xl text-center max-w-3xl mx-auto mb-8 leading-relaxed">
-                  Content of {section}. Add descriptive content here.
+                  {section?.description}
                 </p>
+                {/* <button className="mt-4 px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-600">
+                  Learn More
+                </button> */}
               </div>
             ))}
           </Slider>
@@ -114,7 +122,11 @@ export default function Home() {
         <div className="relative z-10 max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0">
           <div className="text-center lg:text-left text-white">
             <h1 className="text-4xl sm:text-5xl font-extrabold">About Us</h1>
-            <p className="text-lg sm:text-xl font-medium">Add details about the company here.</p>
+            <p className="text-lg sm:text-xl font-medium">
+              Let'sachive Software is a privately owned IT Services business formed in 2011.
+              Today we’re proud to boast a strong team of IT Development engineers who thrive on rolling up their sleeves and solving your IT and Development problems
+              while meeting your business needs. We excel at hiring solution positions in Hi-Tech industries.
+            </p>
           </div>
           <div className="w-full lg:w-1/3 flex justify-center items-center">
             <Image
@@ -167,6 +179,39 @@ export default function Home() {
                 <p className="text-gray-700 text-lg">{step.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 text-white p-12  shadow-lg">
+
+        <h1 className="text-4xl md:text-5xl font-extrabold text-center animate__animated animate__fadeIn animate__delay-1s">
+          OUR CLIENTS
+        </h1>
+        <p className="text-xl md:text-2xl mt-6 text-center animate__animated animate__fadeInUp animate__delay-2s">
+          Our consistency and hard work have helped us to serve organizations and make their dream a reality.
+          We have worked on various projects and tackled all challenges that came our way. Our vision is to
+          deliver the best quality results on time, using cutting-edge technologies, ensuring businesses thrive
+          in the future.
+        </p>
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="client-card animate__animated animate__zoomIn animate__delay-3s">
+            <div className="bg-white text-gray-900 p-6 rounded-lg shadow-md">
+              <h2 className="text-xl font-bold mb-3">Company Name 1</h2>
+              <p className="text-sm">Description of the client and their project details.</p>
+            </div>
+          </div>
+          <div className="client-card animate__animated animate__zoomIn animate__delay-3s">
+            <div className="bg-white text-gray-900 p-6 rounded-lg shadow-md">
+              <h2 className="text-xl font-bold mb-3">Company Name 2</h2>
+              <p className="text-sm">Description of the client and their project details.</p>
+            </div>
+          </div>
+          <div className="client-card animate__animated animate__zoomIn animate__delay-3s">
+            <div className="bg-white text-gray-900 p-6 rounded-lg shadow-md">
+              <h2 className="text-xl font-bold mb-3">Company Name 3</h2>
+              <p className="text-sm">Description of the client and their project details.</p>
+            </div>
           </div>
         </div>
       </div>
