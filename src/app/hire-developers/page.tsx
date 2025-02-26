@@ -4,52 +4,52 @@ import React, { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import "animate.css";
 
-const page = () => {
-   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-   const [isMounted, setIsMounted] = useState(false);
+const Page = () => {
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const [isMounted, setIsMounted] = useState(false);
 
-   useEffect(() => {
-     setIsMounted(true);
-   }, []);
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
-   useEffect(() => {
-     if (!isMounted || !canvasRef.current) return;
+  useEffect(() => {
+    if (!isMounted || !canvasRef.current) return;
 
-     const scene = new THREE.Scene();
-     const camera = new THREE.PerspectiveCamera(
-       75,
-       window.innerWidth / window.innerHeight,
-       0.1,
-       1000
-     );
-     const renderer = new THREE.WebGLRenderer({ canvas: canvasRef.current });
-     renderer.setSize(window.innerWidth, window.innerHeight);
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(
+      75,
+      window.innerWidth / window.innerHeight,
+      0.1,
+      1000
+    );
+    const renderer = new THREE.WebGLRenderer({ canvas: canvasRef.current });
+    renderer.setSize(window.innerWidth, window.innerHeight);
 
-     const geometry = new THREE.SphereGeometry(2, 20, 20);
-     const material = new THREE.MeshStandardMaterial({
-       color: 0x007bff,
-       wireframe: true,
-     });
-     const sphere = new THREE.Mesh(geometry, material);
-     scene.add(sphere);
+    const geometry = new THREE.SphereGeometry(2, 20, 20);
+    const material = new THREE.MeshStandardMaterial({
+      color: 0x007bff,
+      wireframe: true,
+    });
+    const sphere = new THREE.Mesh(geometry, material);
+    scene.add(sphere);
 
-     const light = new THREE.PointLight(0xffffff, 1, 100);
-     light.position.set(2, 2, 5);
-     scene.add(light);
+    const light = new THREE.PointLight(0xffffff, 1, 100);
+    light.position.set(2, 2, 5);
+    scene.add(light);
 
-     camera.position.z = 3;
+    camera.position.z = 3;
 
-     const animate = () => {
-       requestAnimationFrame(animate);
-       sphere.rotation.x += 0.005;
-       sphere.rotation.y += 0.005;
-       renderer.render(scene, camera);
-     };
+    const animate = () => {
+      requestAnimationFrame(animate);
+      sphere.rotation.x += 0.005;
+      sphere.rotation.y += 0.005;
+      renderer.render(scene, camera);
+    };
 
-     animate();
-   }, [isMounted]);
+    animate();
+  }, [isMounted]);
 
-   if (!isMounted) return null; 
+  if (!isMounted) return null;
 
   return (
     <>
@@ -91,7 +91,6 @@ const page = () => {
           </div>
         </div>
       </div>
-      {/* About Us Section */}
       <div className="relative py-20 px-6 text-white animate__animated animate__fadeIn bg-opacity-70 ">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center space-y-10 lg:space-y-0 lg:space-x-10">
           <div className="w-full lg:w-1/3 animate__animated animate__fadeInRight">
@@ -203,4 +202,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
