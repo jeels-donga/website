@@ -64,9 +64,10 @@ const ContactUs: React.FC = () => {
               Contact Us
             </h2>
             <p className="text-gray-300">
-              Letsachive Softwares is a privately owned IT Services business
-              formed in 2011. We boast a strong team of IT engineers who excel
-              in solving technical challenges and meeting business needs.
+              CrystalInfotech Softwares is a privately owned IT Services
+              business formed in 2011. We boast a strong team of IT engineers
+              who excel in solving technical challenges and meeting business
+              needs.
             </p>
             <div className="mt-6 space-y-6 text-lg">
               <div className="flex items-center gap-3">
@@ -74,7 +75,7 @@ const ContactUs: React.FC = () => {
                 Khand 1, Indirapuram, Delhi NCR, India
               </div>
               <div className="flex items-center gap-3">
-                <FaEnvelope className="text-blue-400" /> ceo@letsachive.com
+                <FaEnvelope className="text-blue-400" /> ceo@CrystalInfotech.com
               </div>
               <div className="flex items-center gap-3">
                 <FaPhone className="text-blue-400" /> 9911960868 / 9871927350

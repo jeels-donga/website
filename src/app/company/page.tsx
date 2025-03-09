@@ -57,10 +57,10 @@ const canvasRef = useRef<HTMLCanvasElement | null>(null);
             <div className="text-center lg:text-left animate__animated animate__fadeInLeft">
               <h1 className="text-5xl font-extrabold mb-6">About Us</h1>
               <p className="text-lg leading-relaxed">
-                The future of business is online, and Letsachive Softwares is
-                here to provide top-notch web application development. We offer
-                comprehensive project solutions, ensuring you get exactly what
-                you envision.
+                The future of business is online, and CrystalInfotech Softwares
+                is here to provide top-notch web application development. We
+                offer comprehensive project solutions, ensuring you get exactly
+                what you envision.
               </p>
               <p className="text-lg leading-relaxed mt-4">
                 The iterative approach can be considered as one of the

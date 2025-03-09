@@ -145,7 +145,7 @@ const Home = () => {
                 {
                   title: "Tailored Technical Solutions for Your Business",
                   description:
-                    "Looking for skilled personnel for your business? Whether it’s a short-term or long-term need, Letsachive Softwares offers tailored solutions to fulfill your hiring requirements efficiently.",
+                    "Looking for skilled personnel for your business? Whether it’s a short-term or long-term need, CrystalInfotech Softwares offers tailored solutions to fulfill your hiring requirements efficiently.",
                 },
                 {
                   title: "Our Goals: Exceeding Expectations",

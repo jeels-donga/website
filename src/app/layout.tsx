@@ -101,7 +101,7 @@ export default function RootLayout({
         </main>
 
         {/* Footer */}
-        <footer className="bg-gradient-to-b from-gray-900 to-blue-900 text-white pt-12 pb-5">
+        <footer className="bg-gradient-to-b from-transparent to-blue-900 text-white pt-12 pb-5">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {/* Company Info */}
@@ -210,7 +210,7 @@ export default function RootLayout({
                     86, FF4, Gyand Khand 1, Indirapuram, Delhi NCR, GZB, 201010,
                     India
                   </p>
-                  <p className="text-sm mb-2">ceo@letsachive.com</p>
+                  <p className="text-sm mb-2">ceo@CrystalInfotech.com</p>
                   <p className="text-sm">9911960868 / 9871927350</p>
                 </div>
 

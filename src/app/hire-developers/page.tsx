@@ -68,15 +68,16 @@ const Page = () => {
             </h1>
             <p className="text-lg leading-relaxed opacity-90">
               Looking to Hire a Dedicated Team of Developers? For those looking
-              for cost-effective and efficient technology solutions, Letsachive
-              Softwares has a team of dedicated developers for hire. We are a
-              leading IT solutions development company that has developed with
-              quality and appreciation. At present we have a broad network of
-              quality engineers, business experts, and designers.
+              for cost-effective and efficient technology solutions,
+              CrystalInfotech Softwares has a team of dedicated developers for
+              hire. We are a leading IT solutions development company that has
+              developed with quality and appreciation. At present we have a
+              broad network of quality engineers, business experts, and
+              designers.
             </p>
             <p className="text-lg leading-relaxed opacity-90">
-              Letsachive Softwares is known among one of the most admired web
-              development and designing company which offers the top quality
+              CrystalInfotech Softwares is known among one of the most admired
+              web development and designing company which offers the top quality
               development and designing services around the globe.
             </p>
           </div>
@@ -166,7 +167,7 @@ const Page = () => {
           </div>
           <div className="text-center lg:text-left animate__animated animate__fadeInLeft">
             <h1 className="text-5xl font-extrabold mb-6 text-blue-400 drop-shadow-lg">
-              Advantages of Hiring a Dedicated Developer from Letsachive
+              Advantages of Hiring a Dedicated Developer from CrystalInfotech
               Softwares
             </h1>
             <ul>
